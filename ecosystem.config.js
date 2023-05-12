@@ -11,7 +11,7 @@ module.exports = {
       user: "ubuntu",
       host: "54.200.60.31",
       ref: "origin/main",
-      repo: "git@github.com:travisluong/my-app.git",
+      repo: "git@github.com:travisluong/fullstackbook-nextjs-pm2-circleci.git",
       path: "/home/ubuntu",
       "pre-deploy-local": "",
       "post-deploy":
@@ -24,7 +24,7 @@ module.exports = {
       user: "ubuntu",
       host: "54.200.60.31",
       ref: "origin/staging",
-      repo: "git@github.com:travisluong/my-app.git",
+      repo: "git@github.com:travisluong/fullstackbook-nextjs-pm2-circleci.git",
       path: "/home/ubuntu",
       "pre-deploy-local": "",
       "post-deploy":
