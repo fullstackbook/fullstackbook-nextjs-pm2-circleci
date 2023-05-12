@@ -91,6 +91,10 @@ workflows:
           filters: &filters-production
             branches:
               only: main
+      - hold_for_approval:
+          type: approval
+          requires:
+              - build-and-test
       - deploy_to_production:
           filters:
             <<: *filters-production
@@ -102,6 +106,10 @@ workflows:
           filters: &filters-staging
             branches:
               only: staging
+      - hold_for_approval:
+          type: approval
+          requires:
+              - build-and-test
       - deploy_to_staging:
           filters:
             <<: *filters-staging
