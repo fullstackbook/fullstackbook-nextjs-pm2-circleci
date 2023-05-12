@@ -100,6 +100,7 @@ workflows:
             <<: *filters-production
           requires:
               - build-and-test
+              - hold_for_approval
   staging:
     jobs:
       - build-and-test:
@@ -115,5 +116,6 @@ workflows:
             <<: *filters-staging
           requires:
               - build-and-test
+              - hold_for_approval
       # For running simple node tests, you could optionally use the node/test job from the orb to replicate and replace the job above in fewer lines.
       # - node/test
