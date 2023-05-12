@@ -101,7 +101,7 @@ workflows:
       - build-and-test:
           filters: &filters-staging
             branches:
-              only: main
+              only: staging
       - deploy_to_staging:
           filters:
             <<: *filters-staging
